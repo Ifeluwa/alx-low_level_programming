@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+#include <stdio.h>
+/**
+ * main - this is where the program starts running
+ *
+ * Return: 0 if no error and non zero if error
+ */
 int main(void)
 {
 		int n;

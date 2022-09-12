@@ -6,18 +6,21 @@
  */
 int main(void)
 {
-	int alphabet, ALPHATBET;
+	int alphabet, ALPHABET;
+
 	alphabet = 'a';
 	ALPHABET = 'A';
-	while (alphabet <= 'z');
+
+	while (alphabet <= 'z')
 		{
-			putchar(alphabet);
+		putchar(alphabet);
+		alphabet++;
 		}
-	while (ALPHABET <= 'Z');
+	while (ALPHABET <= 'Z')
 		{
-			putchar(ALPHABET);
+		putchar(ALPHABET);
+		ALPHABET++;
 		}
 	putchar('\n');
-	return(0);
-	
+	return (0);
 }

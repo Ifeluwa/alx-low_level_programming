@@ -8,7 +8,7 @@ int main(void)
 {
 	int tebahpla;
 
-	for (tebahpla = 'a'; tebahpla <= 'z'; tebahpla--)
+	for (tebahpla = 'a'; tebahpla >= 'z'; tebahpla--)
 	{
 		putchar(tebahpla);
 	}

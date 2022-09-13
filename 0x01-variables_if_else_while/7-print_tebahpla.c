@@ -9,9 +9,9 @@ int main(void)
 	int tebahpla;
 
 	for (tebahpla = 'a'; tebahpla <= 'z'; tebahpla--)
-
+	{
 		putchar(tebahpla);
-		putchar('\n');
-
+	}
+	putchar('\n');
 	return (0);
 }

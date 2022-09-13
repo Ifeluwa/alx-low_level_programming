@@ -8,9 +8,11 @@ int main(void)
 {
 	int tebahpla;
 
-	for (tebahpla = 'a'; tebahpla >= 'z'; tebahpla--)
+	tebahpla = 'a';
+	while (tebahpla >= 'z')
 	{
 		putchar(tebahpla);
+		tebahpla--;
 	}
 	putchar('\n');
 	return (0);

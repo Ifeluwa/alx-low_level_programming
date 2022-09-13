@@ -9,8 +9,8 @@ int main(void)
 	int digit;
 	char letters;
 
-	digit = 0;
-	while (digit <= 9)
+	digit = '0';
+	while (digit <= '9')
 	{
 		putchar(digit);
 		digit++;
@@ -20,6 +20,7 @@ int main(void)
 	while (letters <= 'f')
 	{
 		putchar(letters);
+		letters++;
 	}
 	putchar('\n');
 	return (0);

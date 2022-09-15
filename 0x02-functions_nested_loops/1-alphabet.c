@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include "1main.h"
+#include "main.h"
 /**
- * main - entry point (Print the alphabet)
+ * print_alphabet -  entry point (Print the alphabet, followed by a new line)
  *
- * Return: 0 always on success
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
-	int print_alphabet;
+	int i;
 
-	for (print_alphabet = 'a'; print_alphabet <= 'z'; print_alphabet++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(print_alphabet);
+		_putchar(i);
 	}
-	putchar('\n');
-
-	return (0);
-
+	_putchar('\n');
 }

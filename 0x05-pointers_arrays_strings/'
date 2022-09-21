@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * print_rev - prints strin in reverse
+ * @s: the string
+ *
+ * Return: nothing
+ */
+void print_rev(char *s)
+{
+	int I, i;
+	char *bgn, *end, ch;
+
+	I = strlen(s);
+
+	bgn = s;
+	end = s;
+
+	for (i = 0; i < I - 1; i++)
+		end++;
+	for (i = 0; i < I / 2; i++)
+	{
+		ch = *end;
+		*end = *bgn;
+		*bgn = ch;
+		bgn++;
+		end--;
+	}
+
+	_putchar('\n');
+}

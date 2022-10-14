@@ -17,9 +17,10 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	len = sizeof(str);
+	for (index = 0; str[index]; index++)
+		len++;
 
-	dupstr = malloc(sizeof(char) * len);
+	dupstr = malloc(sizeof(char) * (len + 1));
 
 	for (index = 0; str[index]; index++)
 		dupstr[index] = str[index];

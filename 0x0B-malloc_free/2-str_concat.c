@@ -11,7 +11,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len, i = 0, j = 0;
+	int len = 0, i, j = 0;
 	char *twostr;
 
 	if (s1 == NULL)
@@ -35,5 +35,4 @@ char *str_concat(char *s1, char *s2)
 		twostr[j++] = s2[i];
 
 	return (twostr);
-
 }

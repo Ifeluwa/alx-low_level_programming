@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
  * _strlen - length
@@ -25,7 +26,7 @@ int _strlen(char *str)
  *
  * Return: copied string
  */
-char _strcopy(char *str, char *dest)
+char *_strcopy(char *str, char *dest)
 {
 	int index = 0;
 
@@ -55,7 +56,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	doggo = malloc(sizeof(dog_t));
-	if (doggo->name == NULL)
+	if (doggo == NULL)
 		return (NULL);
 
 	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
@@ -65,7 +66,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	doggot->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (doggo->owner == NULL)
 	{
 		free(doggo->name);
